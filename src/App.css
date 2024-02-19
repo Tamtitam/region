@@ -1,38 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #3d3d3d;
+  color: white;
+}
+li{
+  list-style: none;
+}
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  margin-left:15px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #464646;
+  height: 70px;
+  display: block;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.App-header img{
+  margin: 8px 15px;
+  max-width: 160px;
 }
 
 .App-link {
   color: #61dafb;
 }
+.mockupsContainer{
+  display: block;
+}
+.mockupsContainer
+{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.mockupsContainer .mockup{
+  display: flex;
+  flex-flow: column;
+  grid-auto-rows: 20px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mockupImg{
+  max-height: 225px;
+  max-width: 300px;
+  object-fit:contain;    
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.mockupImg:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+header img{
+  margin: 0;
+  float: left;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.bundlesContainer{
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: aliceblue;
+  position: relative;
+  float: left;
+
 }
